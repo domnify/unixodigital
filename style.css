@@ -1,0 +1,98 @@
+.button {
+    background-color: red;
+    border-radius: 0 22px 0 22px;
+    padding: 10px 35px;
+}
+
+#hero {
+    background-image: url(images/hero_bg-1.jpeg);
+    min-height: 700px;
+
+}
+
+
+
+#counter {
+    margin-top: -250px;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+ 
+  
+    font-weight: 600;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+}
+
+.item-collection-1 {
+    position: relative;
+    left: 0%;
+    animation: swap 25s linear infinite;
+    font-size: 100px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #FF4A17;
+    font-family: Helvetica;
+}
+
+
+.item1 {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* Transition */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes swap {
+
+    0%,
+    50% {
+        left: 0%;
+    }
+
+    50.01%,
+    100% {
+        left: 100%;
+    }
+}
